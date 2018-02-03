@@ -24,6 +24,12 @@ include_once("init.php");
 
     <!--  Paper Dashboard core CSS    -->
     <link href="assets/css/paper-dashboard.css" rel="stylesheet"/>
+	
+	<!-- DataTables CSS -->
+    <link href="assets/css/datatables-plugins/dataTables.bootstrap.css" rel="stylesheet">
+
+    <!-- DataTables Responsive CSS -->
+    <link href="assets//css/datatables-responsive/dataTables.responsive.css" rel="stylesheet">
 
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
@@ -41,6 +47,9 @@ include_once("init.php");
 	.error-actions .btn { margin-right:10px; }
 	</style>
 	
+	
+	<!-- Metis Menu Plugin JavaScript -->
+    <script src="assets/js/metisMenu/metisMenu.min.js"></script>
 	
     <!--   Core JS Files   -->
     <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
@@ -63,6 +72,18 @@ include_once("init.php");
 
 	<!-- Paper Dashboard DEMO methods, don't include it in your project! -->
 	<script src="assets/js/demo.js"></script>
+	
+	<!-- jQuery -->
+    <script src="assets/js/jquery/jquery.min.js"></script>
+	
+	<!--  Google Maps Plugin    -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
+	
+	
+	<!-- DataTables JavaScript -->
+    <script src="assets/js/datatables/js/jquery.dataTables.min.js"></script>
+    <script src="assets/js/datatables-plugins/dataTables.bootstrap.min.js"></script>
+    <script src="assets/js/datatables-responsive/dataTables.responsive.js"></script>
 
 	<script type="text/javascript">
     	$(document).ready(function(){
@@ -72,6 +93,16 @@ include_once("init.php");
     	});
 	</script>
 	
+
+
+		<!-- Map -->
+	
+	    <script>
+        $().ready(function(){
+            demo.initGoogleMaps();
+        });
+    </script>
+	<script src="assets/js/demo.js"></script>
 
 </head>
 <body>
@@ -131,7 +162,7 @@ include_once("init.php");
                     </a>
                 </li>
                 <li>
-                    <a href="maps.html">
+                    <a href="?page=map">
                         <i class="ti-map"></i>
                         <p>Maps</p>
                     </a>
