@@ -1,11 +1,5 @@
 <?php
 session_start();
-/*if(!include_once "config.php"){
-           header("location:install.php");
- }
-if (!defined('posnicEntry')) {
-    define('posnicEntry', true);
-}*/
 if(isset($_SESSION['username'])) {
     if($_SESSION['usertype'] =='admin') // if session variable "username" does not exist.
 	header("location:dashboard.php"); // Re-direct to index.php
@@ -21,7 +15,6 @@ if(isset($_SESSION['username'])) {
 	<!-- Stylesheets -->
 	
 	<link rel="stylesheet" href="css/style.css">
-	<link rel="stylesheet" href="css/cmxform.css">
 	<link rel="stylesheet" href="js/lib/validationEngine.jquery.css">
 	
 	<!-- Scripts -->
@@ -68,8 +61,7 @@ if(isset($_SESSION['username'])) {
 </head>
 <body>
 
-<!--    Only Index Page for Analytics   -->
-<?php include_once("analyticstracking.php") ?>
+
 	<!-- TOP BAR -->
 	<div id="top-bar">
 		
@@ -93,7 +85,7 @@ if(isset($_SESSION['username'])) {
     
 			<!-- Change this image to your own company's logo -->
 			<!-- The logo will automatically be resized to 39px height. -->
-			<center><a href="#" id="company-branding" target="blank"><img src="<?php echo "upload/ims_perak.png"; ?>" alt="IMS" /></a> </center><!--Kene check 25/1/2018/-->
+			<center><a href="#"  target="blank"><img style="width:50%; height:auto;" src="<?php echo "upload/ims_perak.png"; ?>" alt="IMS" /></a> </center><!--Kene check 25/1/2018/-->
 			
 		</div> <!-- end full-width -->	
 
@@ -124,46 +116,28 @@ if(isset($_SESSION['username'])) {
 					echo $msg;						
 				}
 				?>
-				
 				</p>
+				
 				<p>
-                                    <label>Username</label>
-                                        <input type="text" id="login-username" class="round full-width-input" placeholder="Enter Username" name="username" autofocus  />
+                <b><label style="text-transform: capitalize;">Username</label></b>
+                <input type="text" id="login-username" class="round full-width-input" placeholder="Enter Username" name="username" autofocus  />
 				</p>
 
 				<p>
-                                <label>Password</label>
-                                        <input type="password" id="login-password" name="password" placeholder="Enter Password" class="round full-width-input"  />
+                 <b><label style="text-transform: capitalize;">Password</label></b>
+                <input type="password" id="login-password" name="password" placeholder="Enter Password" class="round full-width-input"  />
 				</p>
 				
-                                <a href="forget_pass.php" class="button ">Forgot your password?</a>
-				
-				<!--<a href="dashboard.php" class="button round blue image-right ic-right-arrow">LOG IN</a>-->
+                <a href="forget_pass.php" class="button ">Forgot your password?</a>
+				&nbsp;
+				&nbsp;
+				&nbsp;
 				<input type="submit" class="button round blue image-right ic-right-arrow" name="submit" value="LOG IN" />
 			</fieldset>
 
 			<br/>
                         
                 </form>
-				<div style="margin-left: 400px">
-					<script>/*(function(d, s, id) {
-							  var js, fjs = d.getElementsByTagName(s)[0];
-							  if (d.getElementById(id)) return;
-							  js = d.createElement(s); js.id = id;
-							  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=286371564842269";
-							  fjs.parentNode.insertBefore(js, fjs);
-							}(document, 'script', 'facebook-jssdk'));*/
-					</script>
-
-
-					<script type="text/javascript">
-						  /*(function() {
-							var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
-							po.src = 'https://apis.google.com/js/plusone.js';
-							var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
-						  })();*/
-					</script>
-				</div>
 	</div> <!-- end content -->
 	<!-- FOOTER -->
 	<div id="footer">

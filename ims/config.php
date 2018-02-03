@@ -1,1 +1,1 @@
-<?php $config["database"] = "mysql"; $config["host"]= "localhost";$config["username"]= "root"; $config["password"]= "";?>
+<?php $config["database"] = "ims"; $config["host"]= "localhost";$config["username"]= "root"; $config["password"]= "";?>

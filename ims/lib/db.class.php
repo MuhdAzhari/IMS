@@ -1,4 +1,5 @@
 <?php
+error_reporting(E_ALL ^ E_DEPRECATED);
   /** A PHP class to access MySQL database with convenient methods
     * in an object oriented way, and with a powerful debug system.\n
     * Licence:  LGPL \n
@@ -32,12 +33,12 @@
      $myconnection = mysql_connect($server, $user, $pass);
      $myconnection =  mysql_select_db($base)              ;
       
-      if ($myconnection==FALSE) {
-          $data='Database Connection is Not valid Please Enter The valid database connection';
+     /* if ($myconnection==FALSE) {
+          $data='There is no connection with databased';
    header("location:install.php?msg=$data");
     exit;
        
-}
+}*/
     }
 
     /** Query the database.

@@ -1,9 +1,10 @@
 <?php
+
 session_start();
 	include("lib/db.class.php");
 	include_once "config.php";  
 	$db = new DB($config['database'], $config['host'], $config['username'], $config['password']);
-$tbl_name="stock_user"; // Table name
+    $tbl_name="user"; // Table name
 
 // username and password sent from form 
 $myusername=$_REQUEST['username']; 
@@ -30,8 +31,9 @@ $_SESSION['id']=$row[0];
 $_SESSION['username']=$row[1];
 $_SESSION['usertype']=$row[3];
 
+
 if($row[3]=="admin")
-header("location:dashboard.php");
+header("location:main.php");
 else 
 die("Not Valid User Type. Check with your application administartor");
 
