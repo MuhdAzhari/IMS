@@ -85,7 +85,7 @@ if(isset($_SESSION['username'])) {
     
 			<!-- Change this image to your own company's logo -->
 			<!-- The logo will automatically be resized to 39px height. -->
-			<center><a href="#"  target="blank"><img style="width:50%; height:auto;" src="<?php echo "upload/ims_perak.png"; ?>" alt="IMS" /></a> </center><!--Kene check 25/1/2018/-->
+			<center><a href="#"  target="blank"><img style="width:50%; height:auto;" src="<?php echo "image/logo/ims_perak.png"; ?>" alt="IMS" /></a> </center><!--Kene check 25/1/2018/-->
 			
 		</div> <!-- end full-width -->	
 
