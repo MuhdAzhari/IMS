@@ -1,5 +1,19 @@
 
+
+<div style="padding: 10px; overflow:hidden;" class="card card-map">
+	<div style="font-size:20px; float:right;">
+		<a href="#mineform"><i class="fas fa-plus-square" style="color:green;" data-toggle="modal" data-target="#mineform" ></i></a>
+		<!--<i class="fas fa-minus-square" style="color:red;"></i>-->
+		<i class="far fa-check-square" style="color:green;"></i>
+		<i class="far fa-check-square" style="color:red;"></i>
+		<i class="fas fa-trash-alt" style="color:red;"></i>
+	</div>
+</div>
+</p>
+
 <div style="padding: 10px;" class="card card-map">
+
+
 
 <table id="example" class="display nowrap"  cellspacing="0" width="100%">
         <thead>

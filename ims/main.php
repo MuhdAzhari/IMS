@@ -22,7 +22,7 @@ include_once("init.php");
 
 
     <!-- Bootstrap core CSS     -->
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/bootstrap.css" rel="stylesheet" />
 
     <!-- Animation library for notifications   -->
     <link href="assets/css/animate.min.css" rel="stylesheet"/>
@@ -33,15 +33,15 @@ include_once("init.php");
 	<!-- Data table css-->
 	<!--<link href="DataTables/css/jquery.dataTables.min.css" rel="stylesheet" />
 	<link href="DataTables/css/buttons.dataTables.min.css" rel="stylesheet" />-->
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css">
-	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/buttons/1.5.1/css/buttons.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="DataTables/css/jquery.dataTables.min.css">
+	<link rel="stylesheet" type="text/css" href="DataTables/css/buttons.dataTables.min.css">
 
     <!--  CSS for Demo Purpose, don't include it in your project     -->
     <link href="assets/css/demo.css" rel="stylesheet" />
 
 
     <!--  Fonts and icons     -->
-    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+	<link href="font-awesome/css/fontawesome-all.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=Muli:400,300' rel='stylesheet' type='text/css'>
     <link href="assets/css/themify-icons.css" rel="stylesheet">
 	
@@ -49,7 +49,15 @@ include_once("init.php");
 	.error-template {padding: 40px 15px;text-align: center;}
 	.error-actions {margin-top:15px;margin-bottom:15px;}
 	.error-actions .btn { margin-right:10px; }
+	
+	
+
+
+	
 	</style>
+	
+	<!--  Fonts and icons     -->
+	<link href="font-awesome/js/fontawesome-all.js" rel="stylesheet">
 	
 	
 	<!-- Metis Menu Plugin JavaScript -->
@@ -68,9 +76,6 @@ include_once("init.php");
     <!--  Notifications Plugin    -->
     <script src="assets/js/bootstrap-notify.js"></script>
 
-    <!--  Google Maps Plugin    -->
-    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js"></script>
-
     <!-- Paper Dashboard Core javascript and methods for Demo purpose -->
 	<script src="assets/js/paper-dashboard.js"></script>
 
@@ -82,56 +87,30 @@ include_once("init.php");
 	
 	<!--  Google Maps Plugin    -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-lfvqULhEiCikZ8lZNK9KbM7ZzEAtsAA&callback=initMap"
-  type="text/javascript"></script>
+	type="text/javascript"></script>
 	
 	
 	
 	
 	<!--  Datatable    -->
-	
-	<!--<script type="text/javascript" src="DataTables/js/jquery-1.12.4.js"></script>
-	<script type="text/javascript" src="DataTables/js/jquery.dataTables.min.js"></script>
-	<script type="text/javascript" src="DataTables/js/dataTables.buttons.min.js"></script>
-	<script type="text/javascript" src="DataTables/jsjs/buttons.flash.min.js"></script>
-	<script type="text/javascript" src="DataTables/jsjszip.min.js"></script>
-	<script type="text/javascript" src="DataTables/js/pdfmake.min.js"></script>
-	<script type="text/javascript" src="DataTables/js/vfs_fonts.js"></script>
-	<script type="text/javascript" src="DataTables/js/buttons.html5.min.js"></script>
-	<script type="text/javascript" src="DataTables/js/buttons.print.min.js"></script>
-	
-
-	<script type="text">
-	
-	$(document).ready(function() {
-    $('#example').DataTable( {
-				dom: 'Bfrtip',
-				buttons: [
-					'copy', 'csv', 'excel', 'pdf', 'print'
-				]
-			} );
-		} );
-	
-	
-	</script>-->
-	
-	
-	<script type="text/javascript" language="javascript" src="https://code.jquery.com/jquery-1.12.4.js">
+		
+	<script type="text/javascript" language="javascript" src="DataTables/js/jquery-1.12.4.js">
 	</script>
-	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js">
+	<script type="text/javascript" language="javascript" src="DataTables/dataTables.min.js">
 	</script>
-	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/dataTables.buttons.min.js">
+	<script type="text/javascript" language="javascript" src="DataTables/js/dataTables.buttons.min.js">
 	</script>
-	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.flash.min.js">
+	<script type="text/javascript" language="javascript" src="DataTables/js/buttons.flash.min.js">
 	</script>
-	<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js">
+	<script type="text/javascript" language="javascript" src="DataTables/js/jszip.min.js">
 	</script>
-	<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/pdfmake.min.js">
+	<script type="text/javascript" language="javascript" src="DataTables/js/pdfmake.min.js">
 	</script>
-	<script type="text/javascript" language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.32/vfs_fonts.js">
+	<script type="text/javascript" language="javascript" src="DataTables/js/vfs_fonts.js">
 	</script>
-	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.html5.min.js">
+	<script type="text/javascript" language="javascript" src="DataTables/js/buttons.html5.min.js">
 	</script>
-	<script type="text/javascript" language="javascript" src="https://cdn.datatables.net/buttons/1.5.1/js/buttons.print.min.js">
+	<script type="text/javascript" language="javascript" src="DataTables/js/buttons.print.min.js">
 	</script>
 
 	<script type="text/javascript" class="init">
@@ -152,9 +131,9 @@ include_once("init.php");
 	</script>
 	
 	
-	
-	
 	<!--Chart demo--->
+	
+	<script src="assets/js/demo.js"></script>
 	
 	<script type="text/javascript">
     	$(document).ready(function(){
@@ -164,9 +143,6 @@ include_once("init.php");
     	});
 	</script>
 	
-
-
-
 
 </head>
 <body>
@@ -224,6 +200,7 @@ include_once("init.php");
                         <i class="ti-truck"></i>
                         <p>Truck</p>
                     </a>
+
                 </li>
                 <li>
                     <a href="?page=map">
@@ -347,7 +324,13 @@ include_once("init.php");
 				}
 			}
 		  ?>
+		  		 		 
+		  
         </div>
+		
+
+		  <!--end-->
+		
 
 
         <footer class="footer">
@@ -360,6 +343,170 @@ include_once("init.php");
 
     </div>
 </div>
+
+
+<!-- Mine Modal Form-->
+			<div class="modal fade" id="mineform" role="dialog" >
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">&times;</span>
+								<span class="sr-only">Close</span>
+							</button>
+							<h4 class="modal-title" id="myModalLabel">Mine Form</h4>
+						</div>
+						
+						<!-- Modal Body -->
+						<div class="modal-body">
+							<p class="statusMsg"></p>
+							<form role="form">
+								<div class="form-group">
+									<label for="inputName">Name</label>
+									<input type="text" style="border: 1px solid black; border-radius: 5px;" class="form-control" id="inputName" placeholder="Enter your name"/>
+								</div>
+								<div class="form-group">
+									<label for="inputEmail">Email</label>
+									<input type="email"  style="border: 1px solid black; border-radius: 5px;" class="form-control" id="inputEmail" placeholder="Enter your email"/>
+								</div>
+								<div class="form-group">
+									<label for="inputNote">Note</label>
+									<textarea class="form-control"  style="border: 1px solid black; border-radius: 5px;" id="inputMessage" placeholder="Enter your message"></textarea>
+								</div>
+							</form>
+						</div>
+						
+						<!-- Modal Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary submitBtn" onclick="submitContactForm()">SUBMIT</button>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--end-->
+
+
+
+<!-- Company Modal Form-->
+			<div class="modal fade" id="companyform" role="dialog" >
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">&times;</span>
+								<span class="sr-only">Close</span>
+							</button>
+							<h4 class="modal-title" id="myModalLabel">Company Form</h4>
+						</div>
+						
+						<!-- Modal Body -->
+						<div class="modal-body">
+							<p class="statusMsg"></p>
+							<form role="form">
+								<div class="form-group">
+									<label for="inputName">Name</label>
+									<input type="text" style="border: 1px solid black; border-radius: 5px;" class="form-control" id="inputName" placeholder="Enter your name"/>
+								</div>
+								<div class="form-group">
+									<label for="inputEmail">Email</label>
+									<input type="email"  style="border: 1px solid black; border-radius: 5px;" class="form-control" id="inputEmail" placeholder="Enter your email"/>
+								</div>
+								<div class="form-group">
+									<label for="inputNote">Note</label>
+									<textarea class="form-control"  style="border: 1px solid black; border-radius: 5px;" id="inputMessage" placeholder="Enter your message"></textarea>
+								</div>
+							</form>
+						</div>
+						
+						<!-- Modal Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary submitBtn" onclick="submitContactForm()">SUBMIT</button>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--end-->
+
+<!-- Product Modal Form-->
+			<div class="modal fade" id="productform" role="dialog" >
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">&times;</span>
+								<span class="sr-only">Close</span>
+							</button>
+							<h4 class="modal-title" id="myModalLabel">Product Form</h4>
+						</div>
+						
+						<!-- Modal Body -->
+						<div class="modal-body">
+							<p class="statusMsg"></p>
+							<form role="form">
+								<div class="form-group">
+									<label for="inputName">Name</label>
+									<input type="text" style="border: 1px solid black; border-radius: 5px;" class="form-control" id="inputName" placeholder="Enter your name"/>
+								</div>
+								<div class="form-group">
+									<label for="inputNote">Note</label>
+									<textarea class="form-control"  style="border: 1px solid black; border-radius: 5px;" id="inputMessage" placeholder="Enter your message"></textarea>
+								</div>
+							</form>
+						</div>
+						
+						<!-- Modal Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary submitBtn" onclick="submitContactForm()">SUBMIT</button>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--end-->
+
+
+<!-- Truck Modal Form-->
+			<div class="modal fade" id="truckform" role="dialog" >
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<!-- Modal Header -->
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">
+								<span aria-hidden="true">&times;</span>
+								<span class="sr-only">Close</span>
+							</button>
+							<h4 class="modal-title" id="myModalLabel">Truck Form</h4>
+						</div>
+						
+						<!-- Modal Body -->
+						<div class="modal-body">
+							<p class="statusMsg"></p>
+							<form role="form">
+								<div class="form-group">
+									<label for="inputName">Name</label>
+									<input type="text" style="border: 1px solid black; border-radius: 5px;" class="form-control" id="inputName" placeholder="Enter your name"/>
+								</div>
+								<div class="form-group">
+									<label for="inputNote">Note</label>
+									<textarea class="form-control"  style="border: 1px solid black; border-radius: 5px;" id="inputMessage" placeholder="Enter your message"></textarea>
+								</div>
+							</form>
+						</div>
+						
+						<!-- Modal Footer -->
+						<div class="modal-footer">
+							<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							<button type="button" class="btn btn-primary submitBtn" onclick="submitContactForm()">SUBMIT</button>
+						</div>
+					</div>
+				</div>
+			</div>
+<!--end-->
 
 
 </body>

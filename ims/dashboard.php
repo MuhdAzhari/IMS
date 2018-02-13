@@ -13,7 +13,9 @@
                                     <div class="col-xs-7">
                                         <div class="numbers">
                                             <p>Company</p>
-                                            10
+											<a href="?page=company">
+                                            10 <!--Link databased-->
+											</a>
                                         </div>
                                     </div>
                                 </div>
@@ -47,7 +49,9 @@
                                     <div class="col-xs-7">
                                         <div class="numbers">
                                             <p>Mine</p>
-                                            45
+											<a href="?page=mine">
+                                            45 <!--Link databased-->
+											</a>
                                         </div>
                                     </div>
                                 </div>
@@ -76,12 +80,16 @@
                                     <div class="col-xs-5">
                                         <div class="icon-big icon-danger text-center">
                                             <i class="ti-view-list-alt"></i>
+
                                         </div>
                                     </div>
+									
                                     <div class="col-xs-7">
                                         <div class="numbers">
                                             <p>Product</p>
-                                            23
+											<a href="?page=product">
+                                            23 <!--Link databased-->
+											</a>
                                         </div>
                                     </div>
                                 </div>
@@ -115,7 +123,9 @@
                                     <div class="col-xs-7">
                                         <div class="numbers">
                                             <p>Truck</p>
-                                            50
+											<a href="?page=product">
+                                            50 <!--Link databased-->
+											</a>
                                         </div>
                                     </div>
                                 </div>
